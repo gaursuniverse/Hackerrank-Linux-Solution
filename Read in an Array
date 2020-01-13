@@ -1,0 +1,24 @@
+while read line
+do
+    my_array=("${my_array[@]}" $line)
+done
+echo ${my_array[@]}
+
+
+or
+
+
+arr=($(cat))
+arr=${arr[*]}
+echo $arr
+
+
+or
+
+
+i=0
+while read line
+do
+array[$i]=$line
+((i+=1))
+done
