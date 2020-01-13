@@ -1,0 +1,10 @@
+read a;
+read b;
+p=`expr $a \+ $b`;
+echo $p
+q=`expr $a \- $b`;
+echo $q
+r=`expr $a \* $b`;
+echo $r
+s=`expr $a \/ $b`;
+echo $s
